@@ -11,12 +11,15 @@ Four adapters share one isolated Chrome for Testing profile on loopback port 922
 | [the-kimiraikkoner](https://github.com/VeigaPunk/the-kimiraikkoner) | `kimiraikkoner` | kimi.com | Fire-and-forget |
 | [the-almanacker](https://github.com/VeigaPunk/the-almanacker) | `almanack` | NotebookLM | Fire-and-forget studio/chat |
 
-Typeface is **JetBrainsMonoNL Nerd Font Mono** (no ligatures) for every surface.
+Typeface is **JetBrainsMonoNL Nerd Font Mono** (no ligatures) on every surface.
 
 ## Site
 
-- **GitHub Pages:** https://veigapunk.github.io/burnerchrome/
-- **Vercel mirror:** https://burnerchrome.vercel.app (or the team deployment URL)
+This repo is the static product/docs site.
+
+- **GitHub:** https://github.com/VeigaPunk/burnerchrome
+- **GitHub Pages:** enable once under Settings → Pages → Source: **GitHub Actions**, then the workflow publishes https://veigapunk.github.io/burnerchrome/
+- **Vercel:** import this repo in the Vercel dashboard (static; `vercel.json` included). The connector created `burnerchrome` / `burnerchrome-pages` on the team; production deploys need a member with deploy permission.
 
 ## Why not Playwright?
 
