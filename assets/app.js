@@ -1,43 +1,43 @@
 (function () {
-  const menuBtn = document.querySelector("[data-menu-btn]");
-  const mobileNav = document.querySelector("[data-mobile-nav]");
-  if (menuBtn && mobileNav) {
-    menuBtn.addEventListener("click", () => {
-      const open = mobileNav.classList.toggle("open");
-      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  const burger = document.querySelector("[data-burger]");
+  const mob = document.querySelector("[data-mob]");
+  if (burger && mob) {
+    burger.addEventListener("click", () => {
+      const open = mob.classList.toggle("open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     });
   }
 
   document.querySelectorAll("[data-copy]").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const id = btn.getAttribute("data-copy");
-      const block = document.getElementById(id);
-      if (!block) return;
-      const text = block.innerText;
+      const el = id ? document.getElementById(id) : btn.closest(".copy")?.querySelector("code");
+      const text = el ? el.textContent : "";
       try {
         await navigator.clipboard.writeText(text);
         const prev = btn.textContent;
         btn.textContent = "Copied";
         setTimeout(() => {
           btn.textContent = prev;
-        }, 1400);
+        }, 1600);
       } catch {
         btn.textContent = "Failed";
-        setTimeout(() => {
-          btn.textContent = "Copy";
-        }, 1400);
       }
     });
   });
 
-  const path = location.pathname.replace(/\/$/, "") || "/";
-  document.querySelectorAll("[data-nav]").forEach((a) => {
-    const href = a.getAttribute("href");
-    if (!href) return;
-    const normalized = href.replace(/\/$/, "") || "/";
-    if (normalized === path || (normalized !== "/" && path.startsWith(normalized))) {
-      a.setAttribute("aria-current", "page");
-    }
+  document.querySelectorAll("[data-tabs]").forEach((root) => {
+    const buttons = root.querySelectorAll("[data-tab]");
+    const panes = root.querySelectorAll("[data-pane]");
+    buttons.forEach((b) => {
+      b.addEventListener("click", () => {
+        const id = b.getAttribute("data-tab");
+        buttons.forEach((x) => x.classList.toggle("on", x === b));
+        panes.forEach((p) => {
+          p.hidden = p.getAttribute("data-pane") !== id;
+        });
+      });
+    });
   });
 })();
