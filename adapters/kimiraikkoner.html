@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kimi Raikkonen — burnerchrome</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html" class="logo">burnerchrome</a>
+  <nav>
+    <a href="../install.html">Install</a>
+    <a href="../burner.html">Burner</a>
+    <a href="../family.html" class="active">Family</a>
+    <a href="../compare.html">vs Playwright</a>
+    <a href="../marketplace.html">Marketplace</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="breadcrumb"><a href="../family.html">Family</a> / The Kimi Raikkonen</div>
+  <h1>The Kimi Raikkonen</h1>
+  <p class="lead">Fire-and-forget bridge for kimi.com. Shares the permanent burner-chrome profile.</p>
+  <div class="card">
+    <h2>CLI</h2>
+    <pre><code>kimiraikkoner</code></pre>
+    <p>Target: <strong>kimi.com</strong></p>
+    <p>Behavior: fire-and-forget. Does not block on response capture.</p>
+  </div>
+  <div class="card">
+    <h2>Install</h2>
+    <pre class="copyable"><code>npx ds4cc-marketplace install the-kimiraikkoner</code></pre>
+    <p>Or clone: <a href="https://github.com/VeigaPunk/the-kimiraikkoner">github.com/VeigaPunk/the-kimiraikkoner</a></p>
+  </div>
+  <div class="card">
+    <h2>Shared profile</h2>
+    <p>Uses the same isolated <code>--user-data-dir</code> as the rest of the Musketeer family. CDP on <code>127.0.0.1:9222</code>. Sequential fires only.</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <p>burnerchrome · permanent burner Chrome for the Musketeer family</p>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
