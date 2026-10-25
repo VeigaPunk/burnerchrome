@@ -4,9 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The Kimi Räikkönen — Musketeer family</title>
-  <meta name="description" content="Four CDP adapters. One permanent burner Chrome. Persistent OAuth for web-GUI-only features." />
+  <meta name="description" content="kimiraikkoner fires a prompt into the kimi.ai web UI and exits. Never named kimi, so it cannot collide with the official Kimi Code CLI." />
   <meta name="theme-color" content="#0c0c0b" />
+  <link rel="canonical" href="https://burnerchrome-pages.vercel.app/adapters/kimiraikkoner" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="burnerchrome" />
+  <meta property="og:title" content="The Kimi Räikkönen — Musketeer family" />
+  <meta property="og:description" content="kimiraikkoner fires a prompt into the kimi.ai web UI and exits. Never named kimi, so it cannot collide with the official Kimi Code CLI." />
+  <meta property="og:url" content="https://burnerchrome-pages.vercel.app/adapters/kimiraikkoner" />
+  <meta property="og:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Musketeer brand mark, steel on warm black: Four adapters. One permanent burner Chrome." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Kimi Räikkönen — Musketeer family" />
+  <meta name="twitter:description" content="kimiraikkoner fires a prompt into the kimi.ai web UI and exits. Never named kimi, so it cannot collide with the official Kimi Code CLI." />
+  <meta name="twitter:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" href="../fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="../fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="../assets/styles.css" />
@@ -15,28 +30,28 @@
   <a class="skip" href="#content">Skip to content</a>
   <header class="top">
     <div class="navwrap">
-      <a class="brand" href="../index.html">
+      <a class="brand" href="../">
         <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
           <path d="M6 26 L26 6"/><path d="M10 6 L22 26"/><path d="M26 18 L6 14"/><path d="M16 4 L16 28"/>
         </svg>
         <span>Musketeer</span>
       </a>
-      <nav class="desk"><a class="on" href="../family.html">Family</a>
-          <a class="" href="../install.html">Install</a>
-          <a class="" href="../burner.html">Burner Chrome</a>
-          <a class="" href="../compare.html">Vs Playwright</a>
-          <a class="" href="../marketplace.html">DS4CC</a></nav>
+      <nav class="desk" aria-label="Primary"><a class="on" aria-current="page" href="../family">Family</a>
+          <a class="" href="../install">Install</a>
+          <a class="" href="../burner">Burner Chrome</a>
+          <a class="" href="../compare">Vs Playwright</a>
+          <a class="" href="../marketplace">DS4CC</a></nav>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
-    <div class="mob" data-mob><a href="../family.html">Family</a>
-          <a href="../install.html">Install</a>
-          <a href="../burner.html">Burner Chrome</a>
-          <a href="../compare.html">Vs Playwright</a>
-          <a href="../marketplace.html">DS4CC</a></div>
+    <nav class="mob" data-mob aria-label="Mobile"><a href="../family">Family</a>
+          <a href="../install">Install</a>
+          <a href="../burner">Burner Chrome</a>
+          <a href="../compare">Vs Playwright</a>
+          <a href="../marketplace">DS4CC</a></nav>
   </header>
   <main id="content">
     <article class="wrap">
-      <a class="sm muted u" href="../family.html">← Family</a>
+      <a class="sm muted u" href="../family">← Family</a>
       <div style="margin-top:1.5rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem">
         <div>
           <p class="eyebrow">kimi.ai</p>
@@ -56,13 +71,13 @@
       <section style="margin-top:3rem">
         <h2 class="sec">Commands</h2>
         <div style="margin-top:1rem"><div class="copy">
-  <div class="copyhead"><span>Fire a prompt</span><button type="button" data-copy="kimiraikkoner-c0">Copy</button></div>
+  <div class="copyhead"><span>Fire a prompt</span><button type="button" aria-live="polite" data-copy="kimiraikkoner-c0">Copy</button></div>
   <pre><code id="kimiraikkoner-c0">kimiraikkoner &quot;summarize this thread in six lines&quot;</code></pre>
 </div></div><div style="margin-top:1rem"><div class="copy">
-  <div class="copyhead"><span>Stdin</span><button type="button" data-copy="kimiraikkoner-c1">Copy</button></div>
+  <div class="copyhead"><span>Stdin</span><button type="button" aria-live="polite" data-copy="kimiraikkoner-c1">Copy</button></div>
   <pre><code id="kimiraikkoner-c1">printf &#x27;%s&#x27; &quot;$long_prompt&quot; | kimiraikkoner --stdin</code></pre>
 </div></div><div style="margin-top:1rem"><div class="copy">
-  <div class="copyhead"><span>Fresh tab</span><button type="button" data-copy="kimiraikkoner-c2">Copy</button></div>
+  <div class="copyhead"><span>Fresh tab</span><button type="button" aria-live="polite" data-copy="kimiraikkoner-c2">Copy</button></div>
   <pre><code id="kimiraikkoner-c2">kimiraikkoner --new-chat &quot;start a fresh tab&quot;</code></pre>
 </div></div>
       </section>
@@ -76,7 +91,7 @@
           <ul style="list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:0.5rem"><li class="card xs" style="padding:0.5rem 0.75rem">--stdin</li><li class="card xs" style="padding:0.5rem 0.75rem">--new-chat</li><li class="card xs" style="padding:0.5rem 0.75rem">KIMIRAIKONER_CDP_HOST</li><li class="card xs" style="padding:0.5rem 0.75rem">KIMIRAIKONER_CDP_PORT</li></ul>
         </div>
       </section>
-      <nav class="row" style="margin-top:3.5rem;border-top:1px solid var(--border);padding-top:2rem"><a class="btn ghost" href="musketeer.html">The Musketeer</a><a class="btn ghost" href="puppeteer.html">The Puppeteer</a><a class="btn ghost" href="almanacker.html">The Almanacker</a></nav>
+      <nav class="row" style="margin-top:3.5rem;border-top:1px solid var(--border);padding-top:2rem"><a class="btn ghost" href="musketeer">The Musketeer</a><a class="btn ghost" href="puppeteer">The Puppeteer</a><a class="btn ghost" href="almanacker">The Almanacker</a></nav>
     </article></main>
   <footer class="bot">
     <div class="foot">

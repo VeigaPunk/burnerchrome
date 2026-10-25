@@ -4,9 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Family — Musketeer</title>
-  <meta name="description" content="Four CDP adapters. One permanent burner Chrome. Persistent OAuth for web-GUI-only features." />
+  <meta name="description" content="Four CDP adapters, one Chrome for Testing profile, one loopback port: grok-web, chitchat, kimiraikkoner, almanack. Sequential fires only." />
   <meta name="theme-color" content="#0c0c0b" />
+  <link rel="canonical" href="https://burnerchrome-pages.vercel.app/family" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="burnerchrome" />
+  <meta property="og:title" content="Family — Musketeer" />
+  <meta property="og:description" content="Four CDP adapters, one Chrome for Testing profile, one loopback port: grok-web, chitchat, kimiraikkoner, almanack. Sequential fires only." />
+  <meta property="og:url" content="https://burnerchrome-pages.vercel.app/family" />
+  <meta property="og:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Musketeer brand mark, steel on warm black: Four adapters. One permanent burner Chrome." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Family — Musketeer" />
+  <meta name="twitter:description" content="Four CDP adapters, one Chrome for Testing profile, one loopback port: grok-web, chitchat, kimiraikkoner, almanack. Sequential fires only." />
+  <meta name="twitter:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" href="fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -15,24 +30,24 @@
   <a class="skip" href="#content">Skip to content</a>
   <header class="top">
     <div class="navwrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="./">
         <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
           <path d="M6 26 L26 6"/><path d="M10 6 L22 26"/><path d="M26 18 L6 14"/><path d="M16 4 L16 28"/>
         </svg>
         <span>Musketeer</span>
       </a>
-      <nav class="desk"><a class="on" href="family.html">Family</a>
-          <a class="" href="install.html">Install</a>
-          <a class="" href="burner.html">Burner Chrome</a>
-          <a class="" href="compare.html">Vs Playwright</a>
-          <a class="" href="marketplace.html">DS4CC</a></nav>
+      <nav class="desk" aria-label="Primary"><a class="on" aria-current="page" href="family">Family</a>
+          <a class="" href="install">Install</a>
+          <a class="" href="burner">Burner Chrome</a>
+          <a class="" href="compare">Vs Playwright</a>
+          <a class="" href="marketplace">DS4CC</a></nav>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
-    <div class="mob" data-mob><a href="family.html">Family</a>
-          <a href="install.html">Install</a>
-          <a href="burner.html">Burner Chrome</a>
-          <a href="compare.html">Vs Playwright</a>
-          <a href="marketplace.html">DS4CC</a></div>
+    <nav class="mob" data-mob aria-label="Mobile"><a href="family">Family</a>
+          <a href="install">Install</a>
+          <a href="burner">Burner Chrome</a>
+          <a href="compare">Vs Playwright</a>
+          <a href="marketplace">DS4CC</a></nav>
   </header>
   <main id="content">
     <article class="wrap">
@@ -40,7 +55,7 @@
       <h1 class="hero">The Musketeer family</h1>
       <p class="lede">Four CDP adapters. One Chrome for Testing profile. One loopback port. Sequential fires only — concurrent bridges race tabs.</p>
       <div class="grid2" style="margin-top:2.5rem">
-        <a class="card pad" href="adapters/musketeer.html">
+        <a class="card pad" href="adapters/musketeer">
           <div style="display:flex;justify-content:space-between;gap:0.75rem;align-items:flex-start">
             <div>
               <h2 class="sec">The Musketeer</h2>
@@ -57,7 +72,7 @@
           <p class="sm muted" style="margin-top:1.25rem">xAI&#x27;s API meters credits. SuperGrok already pays for an unmetered web-UI entitlement — Expert, Heavy, Imagine, Automations — that no official CLI fully exposes.</p>
           <p class="sm" style="margin-top:1.25rem">Open adapter →</p>
         </a>
-        <a class="card pad" href="adapters/puppeteer.html">
+        <a class="card pad" href="adapters/puppeteer">
           <div style="display:flex;justify-content:space-between;gap:0.75rem;align-items:flex-start">
             <div>
               <h2 class="sec">The Puppeteer</h2>
@@ -74,7 +89,7 @@
           <p class="sm muted" style="margin-top:1.25rem">GPT-5.4-Pro extended thinking and Deep Research live only on the authenticated chatgpt.com surface. Codex CLI cannot target them.</p>
           <p class="sm" style="margin-top:1.25rem">Open adapter →</p>
         </a>
-        <a class="card pad" href="adapters/kimiraikkoner.html">
+        <a class="card pad" href="adapters/kimiraikkoner">
           <div style="display:flex;justify-content:space-between;gap:0.75rem;align-items:flex-start">
             <div>
               <h2 class="sec">The Kimi Räikkönen</h2>
@@ -91,7 +106,7 @@
           <p class="sm muted" style="margin-top:1.25rem">Kimi web-UI capabilities are not the same surface as the official Kimi Code CLI. The adapter reuses the already-signed-in family profile — no cookie export, no API keys.</p>
           <p class="sm" style="margin-top:1.25rem">Open adapter →</p>
         </a>
-        <a class="card pad" href="adapters/almanacker.html">
+        <a class="card pad" href="adapters/almanacker">
           <div style="display:flex;justify-content:space-between;gap:0.75rem;align-items:flex-start">
             <div>
               <h2 class="sec">The Almanacker</h2>
@@ -115,7 +130,7 @@
       <section style="margin-top:3.5rem">
         <h2 class="sec">A sequential volley</h2>
         <div style="margin-top:1rem"><div class="copy">
-  <div class="copyhead"><span>sequential</span><button type="button" data-copy="first-fires">Copy</button></div>
+  <div class="copyhead"><span>sequential</span><button type="button" aria-live="polite" data-copy="first-fires">Copy</button></div>
   <pre><code id="first-fires"># Sequential only — concurrent bridges race tabs.
 chitchat --model pro &quot;Write a 40-page research brief on lattice cryptography post-2024&quot;
 grok-web &quot;give me a 3-line haiku about persistent browser cookies&quot;

@@ -4,9 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DS4CC marketplace — Musketeer family</title>
-  <meta name="description" content="Four CDP adapters. One permanent burner Chrome. Persistent OAuth for web-GUI-only features." />
+  <meta name="description" content="DS4CC is the public plugin catalog for Grok Build, Codex, Kimi Code CLI, and OpenCode. The Musketeer family ships there as four plugins." />
   <meta name="theme-color" content="#0c0c0b" />
+  <link rel="canonical" href="https://burnerchrome-pages.vercel.app/marketplace" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="burnerchrome" />
+  <meta property="og:title" content="DS4CC marketplace — Musketeer family" />
+  <meta property="og:description" content="DS4CC is the public plugin catalog for Grok Build, Codex, Kimi Code CLI, and OpenCode. The Musketeer family ships there as four plugins." />
+  <meta property="og:url" content="https://burnerchrome-pages.vercel.app/marketplace" />
+  <meta property="og:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Musketeer brand mark, steel on warm black: Four adapters. One permanent burner Chrome." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DS4CC marketplace — Musketeer family" />
+  <meta name="twitter:description" content="DS4CC is the public plugin catalog for Grok Build, Codex, Kimi Code CLI, and OpenCode. The Musketeer family ships there as four plugins." />
+  <meta name="twitter:image" content="https://burnerchrome-pages.vercel.app/assets/og.png" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" href="fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -15,32 +30,32 @@
   <a class="skip" href="#content">Skip to content</a>
   <header class="top">
     <div class="navwrap">
-      <a class="brand" href="index.html">
+      <a class="brand" href="./">
         <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
           <path d="M6 26 L26 6"/><path d="M10 6 L22 26"/><path d="M26 18 L6 14"/><path d="M16 4 L16 28"/>
         </svg>
         <span>Musketeer</span>
       </a>
-      <nav class="desk"><a class="" href="family.html">Family</a>
-          <a class="" href="install.html">Install</a>
-          <a class="" href="burner.html">Burner Chrome</a>
-          <a class="" href="compare.html">Vs Playwright</a>
-          <a class="on" href="marketplace.html">DS4CC</a></nav>
+      <nav class="desk" aria-label="Primary"><a class="" href="family">Family</a>
+          <a class="" href="install">Install</a>
+          <a class="" href="burner">Burner Chrome</a>
+          <a class="" href="compare">Vs Playwright</a>
+          <a class="on" aria-current="page" href="marketplace">DS4CC</a></nav>
       <button class="burger" type="button" data-burger aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
-    <div class="mob" data-mob><a href="family.html">Family</a>
-          <a href="install.html">Install</a>
-          <a href="burner.html">Burner Chrome</a>
-          <a href="compare.html">Vs Playwright</a>
-          <a href="marketplace.html">DS4CC</a></div>
+    <nav class="mob" data-mob aria-label="Mobile"><a href="family">Family</a>
+          <a href="install">Install</a>
+          <a href="burner">Burner Chrome</a>
+          <a href="compare">Vs Playwright</a>
+          <a href="marketplace">DS4CC</a></nav>
   </header>
   <main id="content">
     <article class="wrap">
       <p class="eyebrow">DS4CC</p>
-      <h1 class="hero">The family is four plugins in an 18-plugin marketplace.</h1>
+      <h1 class="hero">The family is four plugins in a 20-plugin marketplace.</h1>
       <p class="lede"><a class="u" href="https://ds4cc.com">ds4cc.com</a> / <a class="u" href="https://github.com/VeigaPunk/ds4cc-marketplace">VeigaPunk/ds4cc-marketplace</a> is the public catalog for Grok Build, Codex, Kimi Code CLI, and OpenCode. The Musketeer adapters ship there as <span class="badge">the-musketeer</span> <span class="badge">the-puppeteer</span> <span class="badge">the-almanacker</span> <span class="badge">the-kimiraikoner</span>.</p>
       <div style="margin-top:2rem"><div class="copy">
-  <div class="copyhead"><span>register + family</span><button type="button" data-copy="mkt-reg">Copy</button></div>
+  <div class="copyhead"><span>register + family</span><button type="button" aria-live="polite" data-copy="mkt-reg">Copy</button></div>
   <pre><code id="mkt-reg">grok plugin marketplace add VeigaPunk/ds4cc-marketplace
 for p in the-musketeer the-puppeteer the-almanacker the-kimiraikoner; do
   grok plugin install &quot;$p&quot; --trust &amp;&amp; grok plugin enable &quot;$p&quot;
@@ -57,8 +72,8 @@ done</code></pre>
         </div>
       </section>
       <section style="margin-top:3.5rem">
-        <h2 class="sec">Full catalog (18)</h2>
-        <ul class="chips" style="margin-top:1.25rem;list-style:none;padding:0"><li class="chip hi">the-musketeer</li><li class="chip hi">the-puppeteer</li><li class="chip hi">the-almanacker</li><li class="chip hi">the-kimiraikoner</li><li class="chip ">myagents</li><li class="chip ">godspeed-core</li><li class="chip ">mycommands</li><li class="chip ">myskills</li><li class="chip ">ds4cc</li><li class="chip ">sekhmet</li><li class="chip ">xbrd-gdsp-fknpft</li><li class="chip ">xbrd-selector</li><li class="chip ">aaronplug</li><li class="chip ">godspeed-codex-command</li><li class="chip ">heuer-planning</li><li class="chip ">infinizoom</li><li class="chip ">spoderman</li><li class="chip ">the-netsshark</li></ul>
+        <h2 class="sec">Full catalog (20)</h2>
+        <ul class="chips" style="margin-top:1.25rem;list-style:none;padding:0"><li class="chip hi">the-musketeer</li><li class="chip hi">the-puppeteer</li><li class="chip hi">the-almanacker</li><li class="chip hi">the-kimiraikoner</li><li class="chip ">myagents</li><li class="chip ">godspeed-core</li><li class="chip ">mycommands</li><li class="chip ">myskills</li><li class="chip ">ds4cc</li><li class="chip ">sekhmet</li><li class="chip ">xbrd-gdsp-fknpft</li><li class="chip ">xbrd-selector</li><li class="chip ">aaronplug</li><li class="chip ">godspeed-codex-command</li><li class="chip ">heuer-planning</li><li class="chip ">infinizoom</li><li class="chip ">spoderman</li><li class="chip ">the-netsshark</li><li class="chip ">punk-records-brain</li><li class="chip ">shokunin</li></ul>
         <p class="sm subtle" style="margin-top:1rem">agent-wall / plazir18 and agent-pip are not marketplace plugins. Do not grok plugin install them from this catalog.</p>
       </section>
       <section class="card pad raised" style="margin-top:3.5rem">
@@ -69,7 +84,7 @@ done</code></pre>
           <li><span style="color:var(--fg)">Kimi Code 0.28.1</span> — catalog ZIP packages; custom the-* agent profiles are not installed</li>
           <li><span style="color:var(--fg)">OpenCode</span> — no native marketplace; scripts/install-opencode-agents.mjs</li>
         </ul>
-        <p class="sm" style="margin-top:1.25rem">Ready for the host CLIs? <a class="u" href="install.html">One-paste install</a>.</p>
+        <p class="sm" style="margin-top:1.25rem">Ready for the host CLIs? <a class="u" href="install">One-paste install</a>.</p>
       </section>
     </article></main>
   <footer class="bot">
